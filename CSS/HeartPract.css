@@ -1,0 +1,31 @@
+﻿.heart { /*Classes get periods before class name*/
+    background-color: #ae3622;
+    display: inline-block;
+    height: 30px;
+    margin: 0px 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+    .heart:before,
+    .heart:after { /*psuedo element after colon and class name*/
+        content: '';
+        background-color: #ae3622;
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+
+    }
+
+    .heart:before{
+        top: -15px;
+        left:0;
+    }
+
+    .heart:after {
+        top: 15px;
+        left:0;
+    }
